@@ -1,7 +1,7 @@
 const { Router } = require("express");
 const routes = new Router();
 
-routes.get("/start", (req, res) => {
+routes.get("/start", (_, res) => {
   return res.send({ messege: "Connected with success in port 3000!" });
 });
 
